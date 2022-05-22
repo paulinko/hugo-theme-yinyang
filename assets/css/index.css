@@ -17,10 +17,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  font-weight: 600;
-  text-decoration: underline;
-}
 
 .post-ads {
   margin: 50px 0;
@@ -280,3 +276,80 @@ a:hover {
     display: none;
   }
 }
+
+
+
+/* Element | http://localhost:1313/ */
+
+.header-title > a:nth-child(1) {
+  font-family: sans-serif;
+}
+
+/* Inline #0 | http://localhost:1313/ */
+
+.header-title {
+  line-height: 1.6rem;
+  font-size: 1.5rem;
+  white-space: nowrap;
+}
+
+/* Element | http://localhost:1313/ */
+
+.header-title > a:nth-child(1) {
+  font-stretch: ultra-condensed;
+}
+
+/*a:hover {*/
+/*  color: #555;*/
+/*  border-color: #555;*/
+/*}*/
+/*.posts-category:hover {*/
+/*  color: #555;*/
+/*  border-color: #555 !important;*/
+/*}*/
+
+
+/* Inline #0 | http://localhost:1313/ */
+
+.lang-switch {
+  /* font-weight: 600; */
+  margin-bottom: 7px;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  /*a:hover {*/
+  /*  color: #aaa;*/
+  /*}*/
+
+  /*.posts-category:hover {*/
+  /*  color: #aaa;*/
+  /*  border-color: #aaa !important;*/
+  /*}*/
+  body {
+    background-color: #111;
+    color: white;
+  }
+
+  code {
+    color: #111;
+  }
+
+  .post-tags, .related-content, .header-line, .posts-category {
+    border-color: white;
+  }
+
+  .markdown-body pre {
+    background: #f6f8fa;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .day.light-scheme   { background: white; color:  #555; }
+  .night.light-scheme { background:  #eee; color: black; }
+}
+
